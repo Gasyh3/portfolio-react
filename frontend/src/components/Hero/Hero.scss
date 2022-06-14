@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kdam+Thmor+Pro&family=Press+Start+2P&display=swap');
+.hero {
+    
+    display: flex;
+    flex-direction : column;
+    padding : 2%;
+    z-index: 999;
+
+    &__hello {
+        font-family: 'Anton', sans-serif;
+        font-size: 25px;
+        margin-top : 3%;
+        color: #F836F4;
+    }
+
+    &__name {
+        font-family: 'Kdam Thmor Pro', sans-serif;        
+        font-size: 65px;
+        margin : 0;
+        padding-top: 20px;
+        color: #F8D90F;
+    }
+
+    &__legend {
+        font-family: 'Anton', sans-serif;
+        font-size: 35px;
+        margin : 0;
+        color: #F836F4;
+    }
+
+    &__text {
+        width: 75%;
+        font-family: 'Press Start 2P', cursive;
+        color: #D9ECF2;
+        margin-bottom: 50px;
+    }
+}
+
+
+@function multiple-box-shadow ($n) {
+    $value: '#{random(2000)}px #{random(20000)}px #FFF';
+    @for $i from 2 through $n {
+      $value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFF';
+    }
+  
+    @return unquote($value);
+  }
+  $shadows-small: multiple-box-shadow(700);
+  $shadows-medium: multiple-box-shadow(200);
+  $shadows-big: multiple-box-shadow(100);
+  
+  .sky {
+    height: 100%;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    overflow: hidden;
+  }
+  .stars {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $shadows-small;
+    animation: animStar 50s linear infinite;
+  
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 2000px;
+      width: 1px;
+      height: 1px;
+      background: transparent;
+      box-shadow: $shadows-small;
+    }
+  }
+  
+  .stars2 {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: $shadows-medium;
+    animation: animStar 100s linear infinite;
+  
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 2000px;
+      width: 2px;
+      height: 2px;
+      background: transparent;
+      box-shadow: $shadows-medium;
+    }
+  }
+  .stars3 {
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: $shadows-big;
+    animation: animStar 150s linear infinite;
+  
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 2000px;
+      width: 3px;
+      height: 3px;
+      background: transparent;
+      box-shadow: $shadows-big;
+    }
+  }
+  @keyframes animStar {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-2000px);
+    }
+  };

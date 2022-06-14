@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kdam+Thmor+Pro&family=Press+Start+2P&display=swap');
+
+.footer {
+    display: flex;
+    justify-content: center;
+
+    &__text {
+        font-family: 'Press Start 2P', cursive;
+        color: #D9ECF2;
+        font-size: 10px;
+    }
+}

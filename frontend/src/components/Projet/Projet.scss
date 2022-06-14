@@ -1,0 +1,30 @@
+.card {
+    border : 2px solid red;
+    display: flex;
+    padding: 1%;
+
+    &__img {
+        width : 60%;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.projet__title {
+    border : 1px solid red;
+}
+
+.projet__legend {
+    border : 2px solid blue;
+}
+
+.projet__techno {
+    
+}
+
+.projet__img {
+    width : 100%;
+}

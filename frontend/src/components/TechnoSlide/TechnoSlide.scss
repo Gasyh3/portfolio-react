@@ -1,0 +1,60 @@
+@keyframes AutoSlideTechno {
+	0% {
+		left: 0%; /*1ère image*/
+	}
+	15% {
+		left: 15%; /*idem pour attente*/
+	}
+	35% {
+		left: 35%; /*2ème image*/
+	}
+	50% {
+		left: 50%; /*idem pour attente*/
+	}
+	70% {
+		left: 70%; /*3ème image*/
+	}
+	85% {
+		left: 85%; /*idem pour attente*/
+	}
+	100% {
+		left: 100%; /*1ère image*/
+	}
+}
+
+.technoslide {
+    position: relative;
+	width: 100%;
+	height: 100px;
+	margin:  20px auto;
+    overflow: hidden;
+
+    &__contents {
+        position: absolute;
+        display: flex;
+        top: 0;
+        right: 160%;
+        width: 200px;
+        margin: 0;            
+        padding: 0;
+        
+        /*CSS3 keyframes animation*/
+        //animation-name: AutoSlideTechno;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+    &__contents li {
+        display: inline;
+    }
+
+    &__img {
+        width: 200px;
+        height: 100px;
+        object-fit: co;
+    }
+}
+
+
+

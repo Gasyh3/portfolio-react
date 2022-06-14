@@ -1,0 +1,15 @@
+.projects {
+    border : 2px solid pink;
+    display : flex;
+    flex-direction: column;
+    padding: 2%;
+
+    &__title {
+
+    }
+
+    &__block {
+        border : 3px solid red;
+        padding : 2%;
+    }
+}
