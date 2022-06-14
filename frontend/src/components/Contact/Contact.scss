@@ -1,6 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kanit:wght@300&family=Kdam+Thmor+Pro&family=Press+Start+2P&family=Shadows+Into+Light&display=swap');
+
 .contact {
-    border : 2px solid greenyellow;
     display: flex;
     flex-direction: column;
     padding : 2%;
+    margin-left: 10%;
+
+    &__title {
+        color: #F8D90F;
+        font-family: 'Kdam Thmor Pro', sans-serif; 
+        font-size: 30px;
+    }
+
+    &__me {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        
+    }
+
+    &__legend {
+        font-family: 'Kanit', sans-serif;
+        color: #D9ECF2;
+        font-size: 20px;
+    }
+    
+    &__legend a {
+        font-family: 'Kanit', sans-serif;
+        text-decoration: none;
+        color: #F836F4;
+        font-size: 20px;   
+    }
+
+    &__legend span {
+        color: #F8D90F;
+    }
+
+    &__social a {
+        border: 1px solid #F836F4;
+        border-radius : 20px;
+        margin: 2%;
+        padding: 5px;
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 25px;
+        color: #D9ECF2;
+        text-decoration: none;
+    }
+
+    &__social a:hover {
+        background-color: #F836F4;
+        border: 1px solid #F836F4;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+   
+    .contact {
+        display: flex;
+        flex-direction: column;
+        padding : 2%;
+        margin-left: 10%;
+    
+        &__title {
+            color: #F8D90F;
+            font-family: 'Kdam Thmor Pro', sans-serif; 
+            font-size: 30px;
+        }
+    
+        &__me {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 25px;
+            
+        }
+    
+        &__legend {
+            font-family: 'Kanit', sans-serif;
+            color: #D9ECF2;
+            font-size: 20px;
+        }
+        
+        &__legend a {
+            font-family: 'Kanit', sans-serif;
+            text-decoration: none;
+            color: #F836F4;
+            font-size: 20px;   
+        }
+    
+        &__legend span {
+            color: #F8D90F;
+        }
+    
+        &__social a {
+            border: 1px solid #F836F4;
+            border-radius : 20px;
+            margin: 2%;
+            padding: 5px;
+            font-family: 'Shadows Into Light', cursive;
+            font-size: 25px;
+            color: #D9ECF2;
+            text-decoration: none;
+        }
+    
+        &__social a:hover {
+            background-color: #F836F4;
+            border: 1px solid #F836F4;
+        }
+    }
 }

@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kanit:wght@300&family=Kdam+Thmor+Pro&family=Press+Start+2P&display=swap');
+
 .card {
-    border : 2px solid red;
     display: flex;
     padding: 1%;
-
+    margin: 2%;
+    background: linear-gradient(#3D156B, #DF3562, #FEB97E);
+    border-radius: 30px;
     &__img {
         width : 60%;
     }
@@ -14,17 +17,57 @@
 }
 
 .projet__title {
-    border : 1px solid red;
+    color: #BFDDDE;
+    font-family: 'Kdam Thmor Pro', sans-serif; 
+    padding-left: 15%;
 }
 
 .projet__legend {
-    border : 2px solid blue;
+    font-family: 'Kanit', sans-serif;
+    color: #83C8D1;
+    font-size: 20px;
+    padding-left: 15%;
 }
 
 .projet__techno {
-    
+    font-family: 'Press Start 2P', cursive;
+    color: #BFDDDE;
+    padding-left: 15%;
+    font-size: 10px;
 }
 
 .projet__img {
     width : 100%;
+    border-radius: 30px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .projet__title {
+        font-size: 25px;
+    }
+
+    .projet__legend {
+        color: #042434;
+    }
+   
+    .projet__techno {
+        color: #042434;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+
+
+        &__img {
+            width: 100%;
+            object-fit: fill;
+        }
+    
+        &__text {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
 }

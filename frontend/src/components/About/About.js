@@ -1,6 +1,7 @@
 import React from "react";
 import Slideshow from "../Slideshow/Slideshow";
 import TechnoSlide from "../TechnoSlide/TechnoSlide";
+import TechnoSlideAlt from "../TechnoSlide/TechnoSlideAlt";
 import "./About.scss";
 
 function About() {
@@ -11,7 +12,7 @@ function About() {
         <div className="stars2"></div>
         <div className="stars3"></div>
 
-        <div className="about">
+        <div id="about" className="about">
           <h1 className="about__title">À propos de moi</h1>
           <div className="aboutme">
             <div className="aboutme__text">
@@ -41,6 +42,7 @@ function About() {
           </div>
           <div className="about__tech">
             <TechnoSlide />
+            <TechnoSlideAlt />
           </div>
         </div>
       </div>

@@ -1,4 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kdam+Thmor+Pro&family=Press+Start+2P&display=swap');
+
 button {
-    height: 75px;
-    width: 200px;
+    height: 100px;
+    width: 250px;
+    border-radius : 5px;
+    border : 2px solid #F8D90F;
+    cursor: pointer;
+    padding: 5px;
+    background-color : transparent;
+    color: #D9ECF2;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #F8D90F;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    button {
+        height: 75px;
+        width: 150px;
+        font-size: 15px;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-bottom: 10%;
+    }
 }

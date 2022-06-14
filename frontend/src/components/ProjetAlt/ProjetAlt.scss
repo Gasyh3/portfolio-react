@@ -1,11 +1,14 @@
 .cardalt {
-    border : 2px solid blue;
     display: flex;
     flex-direction: row-reverse;
     padding: 1%;
+    margin: 2%;
+    background: linear-gradient(#FCCD1B, #EB7195, #BC1BAB);
+    border-radius: 30px;
 
     &__img {
-        width: 60%;
+        width: 50%;
+        
     }
 
     &__text {
@@ -15,17 +18,62 @@
 }
 
 .projetalt__title {
-    border : 1px solid red;
+    color: #075061;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    
 }
 
 .projetalt__legend {
-    border : 2px solid red;     
+    font-family: 'Kanit', sans-serif;
+    color: #042434;
+    font-size: 20px;    
+    padding-right: 15%;
 }
 
 .projetalt__techno {
-    
+    font-family: 'Press Start 2P', cursive;
+    color: #BFDDDE;
+    font-size: 10px;
 }
 
 .projetalt__img {
     width : 100%;
+    border-radius: 30px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .projetalt__title {
+        font-size: 25px;
+        margin-left: 15%;
+        color: #BFDDDE;
+    }
+    
+    .projetalt__legend {    
+        padding-left: 15%;
+    }
+    
+    .projetalt__techno {
+        margin-left: 15%;
+    }
+    
+    .projetalt__img {
+        width : 100%;
+        border-radius: 30px;
+    }
+
+    .cardalt {
+        display: flex;
+        flex-direction: column;
+        
+        &__img {
+            width: 100%;
+            
+        }
+    
+        &__text {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
 }

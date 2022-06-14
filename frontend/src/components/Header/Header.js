@@ -4,15 +4,17 @@ import "./Header.scss";
 function Header() {
   return (
     <div className="header">
-      <div className="header__logo">ケビン </div>
+      <a href="/" className="header__logo">
+        ケビン
+      </a>
       <div className="header__link">
-        <a href="#" className="about">
+        <a href="#about" className="about">
           A propos
         </a>
-        <a href="#" className="projects">
+        <a href="#projects" className="projects">
           Mes projets
         </a>
-        <a href="#" className="contact">
+        <a href="#contact" className="contact">
           Me contacter
         </a>
       </div>

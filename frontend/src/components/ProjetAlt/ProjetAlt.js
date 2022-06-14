@@ -4,9 +4,9 @@ import "./ProjetAlt.scss";
 export default function Projet(props) {
   return (
     <div className="cardalt">
-      <div className="cardalt__img">
+      <a className="cardalt__img" href={props.link}>
         <img className="projetalt__img" src={props.img} alt="Site Web" />
-      </div>
+      </a>
       <div className="cardalt__text">
         <h1 className="projetalt__title">{props.title}</h1>
         <p className="projetalt__legend">{props.legend}</p>
